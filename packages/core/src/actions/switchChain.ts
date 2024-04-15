@@ -63,8 +63,7 @@ export async function switchChain<
     const connector = connection.connector
     if (!connector.switchChain)
       throw new SwitchChainNotSupportedError({ connector })
-    const chain = await connector.switchChain({ chainId })
-    return chain as SwitchChainReturnType<config, chainId>
+    await connector.switchChain({ chainId })
   }
 
   const chain = config.chains.find((x) => x.id === chainId)

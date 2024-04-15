@@ -47,7 +47,7 @@ function App() {
 :::
 
 ::: tip
-When connected, `switchChain` will switch the target chain for the connector. When not connected, `switchChain` will switch the target chain for the Wagmi [`Config`](/react/api/createConfig#config).
+When not connected, `switchChain` will switch the target chain for the Wagmi [`Config`](/react/api/createConfig#config). When connected, `switchChain` will switch the target chain for both the connector and the Wagmi [`Config`](/react/api/createConfig#config).
 :::
 
 ## Parameters
